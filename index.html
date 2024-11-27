@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="./assets/icone.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles.css">
+    <title>Check To Buy</title>
+</head>
+<body>
+    <main>
+        <!-- Formulário -->
+        <form>
+            <img id="sacola" src="./assets/imagemSacola.png" alt="imagem de sacola">
+            <div id="inputs">
+                <input class="input primeiro" id="input" type="text" placeholder="Digite o item para adicionar na lista">  
+                <!--   FUTURA IMPLEMENTAÇÃO 
+                <input class="input segundo" id="input-preco" type="text" placeholder="Digite o valor aproximado"> 
+                -->
+            </div>
+            <button id="botao-salvar">Adicionar</button>
+            <hr>
+        </form>
+
+        <!-- LISTA DE COMPRAS -->
+
+        <h2 id="letreiro">Lista de Compras</h2>
+        <ul id="Lista-de-compras">
+            <li id="li">
+                <p class='conteiner-item' id="vazia" >Sua lista está vazia!</p> 
+            </li>
+        </ul>
+        <div id="espaco">
+            <hr>
+        </div>
+                <!-- COMPRADOS -->
+
+        <h2 id="letreiro">Lista de Comprados</h2>
+        <ul id="comprados">
+            <li id="li">
+                
+            </li>
+        </ul>
+    </main>
+
+    <footer>
+        <b>Desenvolvido por Gustavo Neves</b>
+    </footer>
+
+    <script src="./main.js"></script>
+</body>
+</html>

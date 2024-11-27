@@ -1,0 +1,157 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --cor-primaria: #0D92F4;
+    --cor-secundaria: #77CDFF;
+    --neutro: #ffffff;
+    --preto: #131730;
+    --fonte-titulo: "Krona One", sans-serif;
+    --fonte-texto: "Numans", sans-serif;
+}
+
+
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#sacola{
+height: 300px;
+width: 300px;
+
+}
+
+.input{
+border-radius: 30px;
+width: 40%;
+border: 1px solid black;
+height: 30px;
+padding: 10px 20px;
+}
+
+#inputs{
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    gap: 20px;
+    
+}
+
+.primeiro{
+    width: 60%;
+}
+
+.segundo{
+    width: 30%;
+}
+
+#input::placeholder{
+    text-align: center;
+}
+
+#input-preco{
+    flex-direction: row;
+}
+
+.horario{
+    font-family: var(--fonte-texto);
+}
+
+#botao-salvar{
+    margin: 20px 0;
+    background-color: var(--cor-primaria);
+    color: var(--neutro);
+    height: 30px;
+    width: 20%;
+    border-radius: 30px;
+    border: 1px solid var(--cor-secundaria);
+    font-family: var(--fonte-titulo);
+}
+
+#botao-salvar:hover{
+    background-color: var(--cor-secundaria);
+    cursor: pointer;
+}
+
+hr{
+    border: 1px solid var(--preto);
+    width: 70%;
+    align-items: center;
+}
+
+#espaco{
+    display: flex;
+    justify-content: center;
+}
+
+#letreiro{
+    font-family: var(--fonte-texto);
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.conteiner-item{
+    margin: 50px;
+    text-align: center;
+}
+
+.icones{
+    background-color: transparent;
+    border: 1px solid transparent;
+    cursor: pointer;
+    height: 20px;
+    width: 20px;
+    margin-left: 10px;
+}
+
+.imagem-icones{
+    height: 30px;
+    width: 30px;
+    
+}
+
+.checkbox{
+    height: 30px;
+    width: 30px;
+    margin-right:10px ;
+    
+}
+
+.rotulo{
+    font-size: 40px;
+    font-family: var(--fonte-texto);
+}
+
+#vazia{
+    font-size: 20px;
+    font-weight: 900;
+    
+}
+
+footer b{
+    
+    display: flex;
+    justify-content: right;
+    font-family: var(--fonte-titulo);
+    
+}
+
+@media (max-width: 1100px){
+    #inputs{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 80%;
+        gap: 20px;
+        
+    }
+}
